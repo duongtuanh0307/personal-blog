@@ -1,6 +1,8 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Link from "next/link";
+import { FC } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,37 +11,20 @@ export const metadata = {
   description: "Created with Nextjs and Tailwindcss",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type Props = {
   children: React.ReactNode;
-}) {
-  const header = (
-    <header>
-      <div>
-        <Link href='/'>
-          <h1>Welcome to my blog</h1>
-        </Link>
-      </div>
-    </header>
-  );
+};
 
-  const footer = (
-    <footer>
-      <div>
-        <br />
-        <h3>Created by Duong Tu Anh</h3>
-      </div>
-    </footer>
-  );
-
+const RootLayout: FC<Props> = (props) => {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        {header}
-        {children}
-        {footer}
+        <Header />
+        {props.children}
+        <Footer />
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -1,5 +1,12 @@
 import Markdown from "markdown-to-jsx";
 import { getPostMetaData, getPostContent } from "@/utils/post-helpers";
+import { FC } from "react";
+
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
 export const generateStaticParams = async () => {
   const posts = getPostMetaData();
@@ -8,7 +15,7 @@ export const generateStaticParams = async () => {
   }));
 };
 
-export default function Post({ params }: { params: { slug: string } }) {
+const Post: FC<Props> = ({ params }) => {
   const slug = params.slug;
   const post = getPostContent(slug);
   return (
@@ -20,4 +27,6 @@ export default function Post({ params }: { params: { slug: string } }) {
       </article>
     </div>
   );
-}
+};
+
+export default Post;
