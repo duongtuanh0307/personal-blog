@@ -1,19 +1,17 @@
-import { getPostMetaData } from "@/utils/post-helpers";
 import { FC } from "react";
-import PostCard from "@/components/PostCard";
+import WelcomeText from "@/components/compounds/home/WelcomeText";
+import SiteGuide from "@/components/compounds/home/SiteGuide";
+
+export const metadata = {
+  title: "Duong Tu Anh personal website",
+};
 
 const Home: FC = () => {
-  const postMetaData = getPostMetaData();
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <ul>
-        {postMetaData.map((post, index) => (
-          <li key={index}>
-            <PostCard post={post} />
-          </li>
-        ))}
-      </ul>
-    </main>
+    <div className='flex flex-col items-center max-w-1280 w-full'>
+      <WelcomeText />
+      <SiteGuide />
+    </div>
   );
 };
 

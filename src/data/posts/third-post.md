@@ -2,6 +2,7 @@
 title: "Third Post"
 subtitle: "Mock post for creating personal blog page - third post"
 date: "2023-05-16"
+is-feature: true
 ---
 
 ### What is Lorem Ipsum?

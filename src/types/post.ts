@@ -3,4 +3,6 @@ export type PostMetaData = {
   date: string;
   subtitle: string;
   slug: string;
+  image: string;
+  isFeaturePost?: boolean;
 };

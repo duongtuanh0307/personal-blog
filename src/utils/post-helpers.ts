@@ -14,13 +14,15 @@ export const getPostMetaData = (): PostMetaData[] => {
       date: matterResult.data.date || "",
       subtitle: matterResult.data.subtitle || "",
       slug: fileName.replace(".md", ""),
+      isFeaturePost: matterResult.data.isFeature,
+      image: matterResult.data.image || "/post-photos/IMG_1513.jpg",
     };
   });
   return posts;
 };
 
-export const getPostContent = (slug: string): GrayMatterFile<string> => {
-  const folder = "src/data/posts";
+export const getMdFileContent = (slug: string): GrayMatterFile<string> => {
+  const folder = "src/data";
   const file = `${folder}/${slug}.md`;
   const content = fs.readFileSync(file, "utf-8");
   const matterResult = matter(content);
