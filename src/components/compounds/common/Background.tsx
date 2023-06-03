@@ -26,8 +26,6 @@ export default Background;
 const getBackgroundImage = (): string => {
   const currentDate = new Date();
   const currentTime = currentDate.getHours();
-  if (currentTime >= 5 && currentTime < 7) return "bg-sunrise";
-  if (currentTime >= 7 && currentTime < 18) return "bg-day";
-  if (currentTime >= 18 && currentTime < 20) return "bg-sunset";
+  if (currentTime >= 7 && currentTime < 20) return "bg-day";
   return "bg-night";
 };
