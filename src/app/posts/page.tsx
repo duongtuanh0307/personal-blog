@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 const Posts: FC = () => {
-  const postList = getPostMetaData();
+  const postList = getPostMetaData().sort((a, b) => b.id - a.id); //sorting post list in lastest order
 
   return (
     <div className='flex flex-col max-w-1280 w-full h-full p-8 rounded-md bg-blue-500/25'>

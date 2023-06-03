@@ -10,12 +10,11 @@ export const getPostMetaData = (): PostMetaData[] => {
     const fileContents = fs.readFileSync(`src/data/posts/${fileName}`, "utf-8");
     const matterResult = matter(fileContents);
     return {
+      id: matterResult.data.id,
       title: matterResult.data.title || "",
       date: matterResult.data.date || "",
       subtitle: matterResult.data.subtitle || "",
       slug: fileName.replace(".md", ""),
-      isFeaturePost: matterResult.data.isFeature,
-      image: matterResult.data.image || "/post-photos/IMG_1513.jpg",
     };
   });
   return posts;

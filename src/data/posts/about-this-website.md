@@ -2,8 +2,7 @@
 title: "Some though during this website building process"
 subtitle: "The first post of this website will be about itself."
 date: "2023-06-03"
-is-feature: false
-image: ""
+id: 1
 ---
 
 I have just quit my job after 4 years of employment.
