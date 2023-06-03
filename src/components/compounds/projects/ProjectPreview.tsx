@@ -1,4 +1,5 @@
 import { Project } from "@/types/project";
+import Image from "next/image";
 import { FC } from "react";
 
 type Props = {
@@ -11,10 +12,14 @@ const ProjectPreview: FC<Props> = ({ project }) => {
       <h4 className='text-[1.25rem] font-bold tracking-widest mb-4'>
         {project.title}
       </h4>
-      <div className='overflow-hidden rounded-md mb-4'>
-        <video width='800' height='600' muted autoPlay loop>
-          <source src={project.demoSrc} />
-        </video>
+      <div className='w-full h-80 overflow-hidden relative mr-6 rounded-md border-2 border-white bg-gray-950 mb-4'>
+        <Image
+          src={project.demoSrc}
+          alt='pet project illustration'
+          fill
+          className='object-contain'
+          blurDataURL={project.demoSrc}
+        />
       </div>
       <div className='overflow-auto'>
         <p className='mb-2'>{project.description}</p>
