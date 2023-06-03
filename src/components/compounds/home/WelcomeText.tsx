@@ -25,7 +25,7 @@ const WelcomeText: FC = () => {
         </div>
       </div>
       <DancingText
-        className='h-40 my-12 px-12 py-4 flex text-[8rem] tracking-widest font-bold'
+        className='h-40 mt-8 mb-4 px-12 py-4 flex text-[8rem] tracking-widest font-bold'
         text={"Welcome"}
         delay={6.5}
       />

@@ -54,10 +54,10 @@ const SiteGuide: FC = () => {
             <motion.div
               variants={childAnimate}
               key={index}
-              className='w-1/2 relative px-4 my-12'
+              className='w-1/2 relative px-4 my-10'
             >
               <Link href={pageInfo.href}>
-                <h4 className='flex items-center border border-white px-6 h-14 rounded-md w-fit outline outline-2 outline-white outline-offset-4 uppercase font-bold hover:text-[1.25rem]'>
+                <h4 className='flex items-center border border-white px-4 h-10 rounded-md w-fit outline outline-2 outline-white outline-offset-4 uppercase font-bold hover:text-[1.25rem]'>
                   {pageInfo.label}
                 </h4>
               </Link>
