@@ -19,7 +19,7 @@ const ProjectList: FC = () => {
     <div className='h-full grid grid-cols-3-1 grid-rows-1 gap-4 overflow-auto mt-4'>
       <ProjectPreview project={previewTarget} />
       <div className='flex flex-col h-full'>
-        <h3 className='uppercase font-bold'>Others</h3>
+        <h3 className='uppercase font-bold'>Project list</h3>
         <p className='text-xs italic'>Click to view project detail</p>
         {projectList.length > 0 ? (
           <ul className='h-full overflow-auto mt-4'>
