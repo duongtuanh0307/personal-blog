@@ -1,5 +1,5 @@
 ---
-title: "Some though during this website building process"
+title: "Some thought during this website building process"
 subtitle: "The first post of this website will be about itself."
 date: "2023-06-03"
 id: 1
@@ -13,7 +13,7 @@ My plan is taking several weeks off before starting a new job, which means I hav
 
 Actualy, I used to build personal websites with NextJs 10 and Svelte for practicing new libraries and frameworks but I have never published them.
 
-Because my purpose this time is simply creating a place for sharing my though and the coding, sewing pieces that I made, I chose familiar stack that I tried before:
+Because my purpose this time is simply creating a place for sharing my thought and the coding, sewing pieces that I made, I chose familiar stack that I tried before:
 
 - [NextJS](https://nextjs.org/docs/getting-started/installation)
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
