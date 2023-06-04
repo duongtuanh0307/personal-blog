@@ -24,14 +24,18 @@ const ProjectPreview: FC<Props> = ({ project }) => {
       <div className='overflow-auto'>
         <p className='mb-2'>{project.description}</p>
         <p>&bull; Tech Stack: {project.techStack.join(", ")}</p>
-        <p>
+        <p className='flex flex-col'>
           &bull; Github:{" "}
-          <a
-            href={project.github}
-            className='underline hover:cursor-pointer hover:italic hover:text-blue-500'
-          >
-            {project.github}
-          </a>
+          {project.github.map((repo, index) => (
+            <span key={index}>
+              <a
+                href={repo}
+                className='underline hover:cursor-pointer hover:italic hover:text-blue-500'
+              >
+                {repo}
+              </a>
+            </span>
+          ))}
         </p>
         <p>
           &bull; Deployment:{" "}
@@ -43,7 +47,7 @@ const ProjectPreview: FC<Props> = ({ project }) => {
               {project.deployment}
             </a>
           ) : (
-            "N/A"
+            "N/A (I run this app locally only)"
           )}
         </p>
       </div>
