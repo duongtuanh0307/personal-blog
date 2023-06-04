@@ -12,10 +12,10 @@ const WardrobeItemCard: FC<Props> = ({ wardrobeItem }) => {
   return (
     <div className='border-2 border-white bg-gray-950 rounded-md shadow-lg hover:cursor-pointer relative w-full h-full p-2 hover:shadow-white'>
       <Image
-        src={wardrobeItem.front}
+        src={wardrobeItem.image}
         alt={wardrobeItem.description}
         fill
-        blurDataURL={wardrobeItem.front}
+        blurDataURL={wardrobeItem.image}
         className='object-contain'
       />
     </div>

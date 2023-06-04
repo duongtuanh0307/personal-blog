@@ -1,6 +1,5 @@
 export type WardrobeItem = {
   id: number;
-  front: string;
-  back: string;
+  image: string;
   description: string;
 };
