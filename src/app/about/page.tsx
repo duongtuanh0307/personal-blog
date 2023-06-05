@@ -45,12 +45,13 @@ const About: FC = () => {
         <div className='border-2 border-white py-8 px-4 rounded tracking-wide'>
           <p className='mb-2'>
             I&apos;m a Front-end Developer from Vietnam with {experience} years
-            experience.
+            of experience.
           </p>
           <p className='mb-2'>
-            Graduted in 2019 with Agriculture Business Management Degree, I
-            worked as an IT comunicator (translator) for an IT company for 1.5
-            year before switching to Developer position.
+            Graduted in 2019 with International Agriculture and Food Studies
+            Bachelor Degree in Agribusiness Management major, I worked as an IT
+            comunicator (translator) for an IT company for 1.5 year before
+            switching to Developer position.
           </p>
           <p className='mb-2'>
             I spend my spare time trying new libraries and frameworks.
