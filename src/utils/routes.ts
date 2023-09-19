@@ -30,10 +30,10 @@ export const routes: Route[] = [
     href: "/projects",
     introduction: "Check pet projects I created for fun",
   },
-  {
-    id: 5,
-    label: "Wardrobe",
-    href: "/wardrobe",
-    introduction: "Clothes made by me",
-  },
+  // {
+  //   id: 5,
+  //   label: "Wardrobe",
+  //   href: "/wardrobe",
+  //   introduction: "Clothes made by me",
+  // },
 ];

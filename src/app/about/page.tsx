@@ -57,13 +57,13 @@ const About: FC = () => {
             I spend my spare time trying new libraries and frameworks.
           </p>
           <p className='mb-2'>
-            Apart from coding, I also like drawing and{" "}
-            <Link
+            Apart from coding, I also like drawing and sewing
+            {/* <Link
               href='/wardrobe'
               className='underline hover:text-blue-500 hover:italic'
             >
               sewing
-            </Link>
+            </Link> */}
             .
           </p>
         </div>
