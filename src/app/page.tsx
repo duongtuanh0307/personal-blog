@@ -9,8 +9,8 @@ export const metadata = {
 const Home: FC = () => {
   return (
     <div className='flex flex-col items-center max-w-1280 w-full'>
-      <WelcomeText />
-      <SiteGuide />
+      {/* <WelcomeText />
+      <SiteGuide /> */}
     </div>
   );
 };
