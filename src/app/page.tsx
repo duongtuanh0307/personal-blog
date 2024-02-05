@@ -1,6 +1,6 @@
 import { FC } from "react";
-import WelcomeText from "@/components/compounds/home/WelcomeText";
-import SiteGuide from "@/components/compounds/home/SiteGuide";
+// import WelcomeText from "@/components/compounds/home/WelcomeText";
+// import SiteGuide from "@/components/compounds/home/SiteGuide";
 
 export const metadata = {
   title: "Duong Tu Anh personal website",
