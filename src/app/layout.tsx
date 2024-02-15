@@ -3,7 +3,7 @@ import Footer from "@/components/compounds/common/Footer";
 import "./globals.css";
 import { FC } from "react";
 import { inter } from "@/vendor/font";
-import Background from "@/components/compounds/common/Background";
+import Background from "@/components/compounds/common/background";
 import Script from "next/script";
 
 export const metadata = {
