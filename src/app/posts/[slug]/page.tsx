@@ -1,7 +1,8 @@
-import Markdown from "markdown-to-jsx";
 import { getPostMetaData, getMdFileContent } from "@/utils/post-helpers";
 import { FC } from "react";
 import { Metadata, ResolvingMetadata } from "next";
+import React from "react";
+import CustomMarkdown from "./CustomMarkdown";
 
 export async function generateMetadata(
   { params, searchParams }: Props,
@@ -40,7 +41,8 @@ const Post: FC<Props> = ({ params }) => {
   const ulTagClass = "prose-ul:list-disc prose-ul:list-inside";
   const aTagClass = "prose-a:underline";
   const codeTagClass =
-    "prose-code:bg-rose-300 prose-code:rounded-sm prose-code:px-1";
+    "prose-code:whitespace-pre-wrap prose-code: text-shadow-none";
+  const tableClass = "prose-table:border prose-table:table-auto prose-th:border prose-th:px-4 prose-th:py-2 prose-th:whitespace-nowrap prose-tr:border prose-td:border"
 
   return (
     <div className='max-w-1280 w-full h-full px-12 py-8 rounded-md bg-blue-500/25'>
@@ -50,9 +52,9 @@ const Post: FC<Props> = ({ params }) => {
         </h2>
         <p className='text-sm italic text-right'>{post.data.date}</p>
         <article
-          className={`prose prose-invert w-full py-4 ${pTagClass} ${h3TagClass} ${h4TagClass} ${imgTagClass} ${ulTagClass} ${aTagClass} ${codeTagClass}`}
+          className={`prose prose-invert w-full py-4 ${pTagClass} ${h3TagClass} ${h4TagClass} ${imgTagClass} ${ulTagClass} ${aTagClass} ${codeTagClass} ${tableClass}`}
         >
-          <Markdown>{post.content}</Markdown>
+          <CustomMarkdown content={post.content}/>        
         </article>
       </div>
     </div>

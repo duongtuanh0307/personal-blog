@@ -46,6 +46,9 @@ module.exports = {
         ".text-shadow-light": {
           "text-shadow": "1px 1px 4px #ffffff",
         },
+        ".text-shadow-none": {
+          "text-shadow": "none"
+        }
       });
     }),
   ],

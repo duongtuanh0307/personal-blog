@@ -22,6 +22,14 @@ const RootLayout: FC<Props> = (props) => {
           src='https://kit.fontawesome.com/fe0c67198f.js'
           crossOrigin='anonymous'
         ></Script>
+        <link
+          rel='stylesheet'
+          href='https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/nord.min.css'
+        />
+        <Script
+          crossOrigin='anonymous'
+          src='https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js'
+        ></Script>
       </head>
       <body
         className={`${inter.className} h-screen flex flex-col overflow-hidden text-white text-shadow-dark`}
