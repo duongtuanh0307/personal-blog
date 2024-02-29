@@ -40,9 +40,8 @@ const Post: FC<Props> = ({ params }) => {
     "prose-img:w-full prose-img:h-full prose-img:max-h-60 prose-img:object-contain prose-img:my-4";
   const ulTagClass = "prose-ul:list-disc prose-ul:list-inside";
   const aTagClass = "prose-a:underline";
-  const codeTagClass =
-    "prose-code:whitespace-pre-wrap prose-code: text-shadow-none";
-  const tableClass = "prose-table:border prose-table:table-auto prose-th:border prose-th:px-4 prose-th:py-2 prose-th:whitespace-nowrap prose-tr:border prose-td:border"
+  const tableClass =
+    "prose-table:border prose-table:table-auto prose-th:border prose-th:px-4 prose-th:py-2 prose-th:whitespace-nowrap prose-tr:border prose-td:border";
 
   return (
     <div className='max-w-1280 w-full h-full px-12 py-8 rounded-md bg-blue-500/25'>
@@ -52,9 +51,9 @@ const Post: FC<Props> = ({ params }) => {
         </h2>
         <p className='text-sm italic text-right'>{post.data.date}</p>
         <article
-          className={`prose prose-invert w-full py-4 ${pTagClass} ${h3TagClass} ${h4TagClass} ${imgTagClass} ${ulTagClass} ${aTagClass} ${codeTagClass} ${tableClass}`}
+          className={`prose prose-invert w-full py-4 ${pTagClass} ${h3TagClass} ${h4TagClass} ${imgTagClass} ${ulTagClass} ${aTagClass} ${tableClass}`}
         >
-          <CustomMarkdown content={post.content}/>        
+          <CustomMarkdown content={post.content} />
         </article>
       </div>
     </div>
